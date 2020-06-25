@@ -9,9 +9,9 @@ use std::path::{Path, PathBuf};
 use clap::{App, Arg};
 use serde::{Serialize, Deserialize};
 
-extern crate dirs;
-extern crate glob;
-extern crate shellexpand;
+use dirs;
+use glob;
+use shellexpand;
 
 fn default_version() -> String {
     String::from("v1")
